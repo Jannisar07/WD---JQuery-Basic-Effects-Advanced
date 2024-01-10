@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+</head>
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Module (JQuery Basic, Effects & Advanced) – 5</h1>
+    <h2>1.  What is jQuery?</h2>
+    <p> <strong>Answer:</strong> jQuery is a JavaScript library that is open source that streamlines interactions between an HTML/CSS document, or more properly the Document Object Model (DOM), and JavaScript. To put it another way, jQuery facilitates HTML document traversal and manipulation, browser event handling, DOM animations, Ajax interactions, and cross-browser JavaScript development. <br>
+
+
+        jQuery is the only library available today that fits the needs of both designers and programmers. <br>
+    
+        There are various approaches to getting started with jQuery on your website. <br>
+
+       1. To add a version of jQuery, use the Google/Microsoft-hosted content delivery network (CDN).
+        Download your own jQuery version from jQuery.com and host it on your own server or local disc. <br>
+        
+      2.  To prevent jQuery code from running before the document has finished loading (is ready), all jQuery methods are contained within a document-ready event.
+
+      <h3>Advantages:</h3>
+     1. A large number of plug-ins are available. Developers can use jQuery to build plug-ins on top of the JavaScript library.
+a sizable development community <br>
+2.It comes with thorough documentation. <br>
+3.It is far more user-friendly than normal javascript and other javascript libraries. <br>
+4.JQuery makes it simple for users to create Ajax templates. Ajax allows for a more streamlined interface in which actions can be performed on pages without requiring the full page to be reloaded. <br>
+5.Because of its light weight and robust chaining features, jQuery is more powerful.  <br>
+
+<h3>Disadvantages:</h3>
+1.While JQuery has a large library, depending on how much customisation you need on your website, the capability may be limited, forcing you to use raw javascript in some circumstances. <br>
+2. While the JQuery javascript file is quite tiny (25-100KB depending on the server), it is still a load on the client computer and possibly your web server as well if you intend to host the JQuery script on your own web server. <br>
+        
+        </p>
+    <hr>
+
+    <h2>2. How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery , JQuery Animation?</h2>
+    <p> <strong>Answer:</strong> 
+        <h3>1. Applying CSS with jQuery:</h3>
+
+        In this post, we'll look at how to add CSS styles to HTML components. Before commencing this article, it is recommended that you have a basic understanding of HTML, CSS, JavaScript, and jQuery. <br><br>
+
+Although a basic JavaScript API can be used to update the CSS property of an element, we will attempt to solve this task using the jQuery css() method.
+
+<h3>Syntax:</h3>
+
+<div>
+    $().css(propertyname, value); <br>
+    $().css(properties); <br>
+
+    <br>
+    <h2>example</h2>
+    <br>
+    &lt;script&gt; 
+        let css_property =  <br>
+        {  <br>
+            "color": "green",  <br>
+            "font-size": "20px"  <br>
+        }  <br>
+        $('#change').on('click', function () {  <br>
+  
+            // For multiple css property  <br>
+            $('#context').css(css_property);  <br>
+        }); 
+   <br>
+        $('#change').on('dblclick', function () {  <br>
+              
+            // For single css property  <br>
+            $('#context').css('display', 'none');  <br>
+        })  <br>
+    &lt;/script&gt; 
+
+</div>
+    </p>
+
+    <h3>2. addClass() method:</h3>
+    The addClass() method adds given classes to each of the targeted items while animating all style changes.
+
+
+    <h3>Syntax :</h3>
+    .addClass(className, [duration], [easing], [callback])
+
+    <h3>removeClass() method:</h3>
+    The removeClass() function is used to remove classes from elements while animating all style changes. 
+    <h3>Syntax :</h3>
+    removeClass(className, [duration], [easing], [callback])
+
+    <h3>animate() method</h3>
+    The animation() method is a built-in jQuery method for changing the state of an element with CSS styling. This method can also be used to modify the CSS property that is utilised to generate the animation effect for the selected element.
+
+
+    <h3>Syntax :</h3>
+    (selector).animate({styles}, para1, para2, para3);
+
+    <hr>
+ 
+
+</body>
+</html>
